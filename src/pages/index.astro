@@ -1,23 +1,23 @@
 ---
-
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Stripe Systems LLP</title>
-	</head>
-	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Stripe Systems LLP</title>
+  </head>
+  <body>
+    <Navigation />
 
-		<h1>My Astro Site</h1>
-		<h1>Homepage</h1>
-		<p>This is where I will land when opening the website.</p>
-
-	</body>
+    <h1>My Astro Site</h1>
+    <h1>Homepage</h1>
+    <p>This is where I will land when opening the website.</p>
+    <Footer />
+  </body>
 </html>
